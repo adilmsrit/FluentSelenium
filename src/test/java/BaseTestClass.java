@@ -24,7 +24,8 @@ public class BaseTestClass {
 
     @BeforeMethod
     public void goToHome() {
-        driver.get("https://letskodeit.teachable.com/");
+        // driver.get("https://letskodeit.teachable.com/");
+        driver.get("file:///C:/website/HomePage.html");
     }
 
     @AfterSuite(alwaysRun = true)

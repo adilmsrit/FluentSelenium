@@ -1,17 +1,25 @@
 import org.testng.annotations.Test;
-import pSight.pages.LandingPage;
-import pSight.pages.PracticePage;
+import pSight.pages.CoursePage;
+import pSight.pages.HomePage;
+import pSight.pages.SearchPage;
 
 public class SearchTest extends BaseTestClass {
-    //code from another person
 
-    LandingPage landingPage = new LandingPage();
-    PracticePage practicePage = new PracticePage();
+
+    SearchPage search = new SearchPage();
+    HomePage home = new HomePage();
+    CoursePage course = new CoursePage();
 
     @Test
-    public void enterNameTest() throws InterruptedException {
-        landingPage.goToPracticePage("//a[@href='/pages/practice']");
-        practicePage.enterName("Hero");
-        practicePage.verifyPageNavigated();
+    public void basicFilterByTest() {
+        home.search("Java");
+        search.filterBySkillLevel("Beginner")
+                .filterByRole("Software Development")
+                .selectTabCourse()
+                .selectCourse("Java Fundamentals: The Java");
+
+        course.verifyCoursePreviewIsDisplayed()
+                .verifyFreeTrialIsDisplayed();
+
     }
 }
