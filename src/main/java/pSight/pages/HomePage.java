@@ -11,6 +11,14 @@ public class HomePage {
 
     private WebDriver driver = getChromeDriver();
 
+    private HomePage() {
+        //This is to make sure that
+    }
+
+    public static HomePage getHomePage() {
+        return new HomePage();
+    }
+
     public void search(String value) {
 
         WebElement search = driver.findElement(By.className("header_search--input"));

@@ -14,7 +14,15 @@ public class SearchPage {
     WebDriver driver = getChromeDriver();
     WebDriverWait wait = getWebDriverWait();
 
-    public SearchPage filterBySkillLevel(String value) {
+    private SearchPage() {
+
+    }
+
+    public static SearchPage getSearchPage() {
+        return new SearchPage();
+    }
+
+    public SearchPage filterBySkillLevel(SkillLevel value) {
 
         driver.findElement(By.xpath("//div[contains(@class, 'search-filter-header') and contains(.,'Skill Levels')]"))
                 .click();
@@ -28,7 +36,7 @@ public class SearchPage {
         return this;
     }
 
-    public SearchPage filterByRole(String role) {
+    public SearchPage filterByRole(Role role) {
         driver.findElement(By.xpath("//div[contains(@class, 'search-filter-header') and contains(.,'Roles')]"))
                 .click();
 
@@ -43,6 +51,12 @@ public class SearchPage {
 
     public SearchPage selectTabCourse() {
         driver.findElement(By.xpath("//a[contains(@class, 'tab') and contains(., 'Courses')]"))
+                .click();
+        return this;
+    }
+
+    public SearchPage selectTab(Tab tab) {
+        driver.findElement(By.xpath("//a[contains(@class, 'tab') and contains(., '" + tab + "')]"))
                 .click();
         return this;
     }
