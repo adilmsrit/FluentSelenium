@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+    <test name="FluentSelenium(failed)">
+        <classes>
+            <class name="SearchTest">
+                <methods>
+                    <include name="basicFilterByTest"/>
+                    <include name="goToHome"/>
+                    <include name="startBrowser"/>
+                    <include name="closeBrowser"/>
+                </methods>
+            </class> <!-- SearchTest -->
+        </classes>
+    </test> <!-- FluentSelenium(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->
