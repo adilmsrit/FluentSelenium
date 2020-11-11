@@ -3,8 +3,7 @@ package pSight.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-
-import static pluralsight.DriverFactory.getChromeDriver;
+import static pSight.DriverFactory.getChromeDriver;
 
 public abstract class AbstractPage {
 
