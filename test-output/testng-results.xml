@@ -1,39 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
-    <reporter-output>
-    </reporter-output>
-    <suite name="Default Suite" duration-ms="7648" started-at="2020-11-08T10:21:15Z" finished-at="2020-11-08T10:21:22Z">
-        <groups>
-        </groups>
-        <test name="FluentSelenium" duration-ms="7648" started-at="2020-11-08T10:21:15Z"
-              finished-at="2020-11-08T10:21:22Z">
-            <class name="Code.SearchTest">
-                <test-method status="PASS" signature="startBrowser()[pri:0, instance:Code.SearchTest@5f8e8a9d]"
-                             name="startBrowser" is-config="true" duration-ms="2171" started-at="2020-11-08T14:21:13Z"
-                             finished-at="2020-11-08T14:21:15Z">
-                    <reporter-output>
-                    </reporter-output>
-                </test-method> <!-- startBrowser -->
-                <test-method status="PASS" signature="goToHome()[pri:0, instance:Code.SearchTest@5f8e8a9d]"
-                             name="goToHome"
-                             is-config="true" duration-ms="2563" started-at="2020-11-08T14:21:15Z"
-                             finished-at="2020-11-08T14:21:17Z">
-                    <reporter-output>
-                    </reporter-output>
-                </test-method> <!-- goToHome -->
-                <test-method status="PASS" signature="basicFilterByTest()[pri:0, instance:Code.SearchTest@5f8e8a9d]"
-                             name="basicFilterByTest" duration-ms="5076" started-at="2020-11-08T14:21:17Z"
-                             finished-at="2020-11-08T14:21:22Z">
-                    <reporter-output>
-                    </reporter-output>
-                </test-method> <!-- basicFilterByTest -->
-                <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Code.SearchTest@5f8e8a9d]"
-                             name="closeBrowser" is-config="true" duration-ms="50" started-at="2020-11-08T14:21:22Z"
-                             finished-at="2020-11-08T14:21:22Z">
-                    <reporter-output>
-                    </reporter-output>
-                </test-method> <!-- closeBrowser -->
-            </class> <!-- Code.SearchTest -->
-        </test> <!-- FluentSelenium -->
-    </suite> <!-- Default Suite -->
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="4666" started-at="2020-11-12T17:05:19Z" finished-at="2020-11-12T17:05:23Z">
+    <groups>
+    </groups>
+    <test name="FluentSelenium" duration-ms="4666" started-at="2020-11-12T17:05:19Z" finished-at="2020-11-12T17:05:23Z">
+      <class name="Code.SearchTest">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:Code.SearchTest@2584b82d]" name="startBrowser" is-config="true" duration-ms="2189" started-at="2020-11-12T21:05:16Z" finished-at="2020-11-12T21:05:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method status="PASS" signature="goToHome()[pri:0, instance:Code.SearchTest@2584b82d]" name="goToHome" is-config="true" duration-ms="80" started-at="2020-11-12T21:05:19Z" finished-at="2020-11-12T21:05:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToHome -->
+        <test-method status="PASS" signature="basicFilterByTest()[pri:0, instance:Code.SearchTest@2584b82d]" name="basicFilterByTest" duration-ms="4574" started-at="2020-11-12T21:05:19Z" finished-at="2020-11-12T21:05:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicFilterByTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Code.SearchTest@2584b82d]" name="closeBrowser" is-config="true" duration-ms="81" started-at="2020-11-12T21:05:23Z" finished-at="2020-11-12T21:05:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Code.SearchTest -->
+    </test> <!-- FluentSelenium -->
+  </suite> <!-- Default Suite -->
 </testng-results>
